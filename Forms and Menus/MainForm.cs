@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Forms_and_Menus
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
-        
+        //continue on mnt 00:10:36
     }
 }

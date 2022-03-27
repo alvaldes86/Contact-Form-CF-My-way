@@ -114,6 +114,7 @@
             this.btnOrder.TabIndex = 6;
             this.btnOrder.Text = "Order";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnAbout
             // 
@@ -127,6 +128,7 @@
             this.btnAbout.TabIndex = 7;
             this.btnAbout.Text = "About";
             this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnClear
             // 
@@ -153,6 +155,7 @@
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtName
             // 
@@ -203,6 +206,9 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Forms and Menus";
+            this.Activated += new System.EventHandler(this.MainForm_Activated);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

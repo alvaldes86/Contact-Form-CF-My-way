@@ -16,5 +16,12 @@ namespace Forms_and_Menus
         {
             InitializeComponent();
         }
+
+        public OrderForm( string pMessage)
+        {
+            InitializeComponent();
+            lblWelcome.Text = "Welcome " + pMessage;
+        }
+
     }
 }

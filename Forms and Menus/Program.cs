@@ -16,7 +16,7 @@ namespace Forms_and_Menus
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AboutBox1());
+            Application.Run(new MainForm());
         }
     }
 }

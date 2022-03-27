@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Forms_and_Menus
 {
-    partial class AboutBox1 : Form
+    partial class AboutForm : Form
     {
-        public AboutBox1()
+        public AboutForm()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

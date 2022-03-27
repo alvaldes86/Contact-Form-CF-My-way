@@ -12,8 +12,8 @@ namespace Forms_and_Menus
 {
     public partial class MainForm : Form
     {
-        //59:14
 
+        //1:01:20
 
         public MainForm()
         {
@@ -58,8 +58,16 @@ namespace Forms_and_Menus
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
+            /*
             OrderForm myForm = new OrderForm(txtName.Text);
             myForm.ShowDialog();
+            */
+
+            //perform data validation
+            if (IsValid())
+            {
+                Item myItem = new Item(txtDescription.Text, Decimal.Parse(txtPrice.Text, txtUnits.Text);
+            }
         }
     }
 }

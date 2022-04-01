@@ -71,8 +71,9 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(95, 38);
             this.btnExit.TabIndex = 23;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "Close";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblMessage
             // 
@@ -124,11 +125,12 @@
             // 
             // lblWelcome
             // 
-            this.lblWelcome.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.Location = new System.Drawing.Point(70, 94);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(540, 67);
             this.lblWelcome.TabIndex = 28;
+            this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // OrderForm
             // 
@@ -163,6 +165,6 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblWelcome;
+        public System.Windows.Forms.Label lblWelcome;
     }
 }

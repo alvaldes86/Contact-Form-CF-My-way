@@ -101,7 +101,9 @@ namespace Forms_and_Menus
             }
         }
         #endregion
-
+        /// <summary>
+        /// Coses the AsboutForm
+        /// </summary>
         private void okButton_Click(object sender, EventArgs e)
         {
             Close();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Forms_and_Menus
 {
-    class Item
+    public class Item
     {
         #region Fields
         /// <summary>
@@ -50,6 +50,9 @@ namespace Forms_and_Menus
 
         }
 
+        /// <summary>
+        /// Overloaded contructor accepts three parameters; pDescription, pPrice, and pUnits
+        /// </summary>
         public Item(string pDescription, decimal pPrice, string pUnits)
         {
             Description = pDescription;
@@ -57,18 +60,26 @@ namespace Forms_and_Menus
             Units = pUnits;
         }
 
+
+        /// <summary>
+        /// Destructor of the class.
+        /// </summary>
         ~Item()
         {
             _description = null;
             _price = 0;
-            _units = 0;
+            _units = null;
         }
         #endregion
 
+        /// <summary>
+        /// The ToString method contains a message for the user 
+        /// </summary>
+        /// <returns>Return the string variable message</returns>
         #region Methods
-        public string override ToString()
+        public override string ToString()
         {
-            string message;
+            string message = "Congratulations! Your " + Units +  " order of " + Description + " at " + Price.ToString() + " has been placed successfully.";
 
 
             return message;
